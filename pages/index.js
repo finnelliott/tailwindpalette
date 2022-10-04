@@ -57,18 +57,18 @@ export default function Home() {
           value={primary} 
           onChange={(e) => setPrimary(e.target.value)}
         >
-          {Object.keys(images).map((color) => (
-            <option>{color}</option>
+          {Object.keys(images).map((color, index) => (
+            <option key={index}>{color}</option>
           ))}
         </select>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center gap-16 max-w-3xl mx-auto">
-      {Object.keys(pairings).map((key) => (
-        <div className="w-full max-w-xs mx-auto">
+      {Object.keys(pairings).map((key, index) => (
+        <div key={index} className="w-full max-w-xs mx-auto">
           <div className="text-gray-400 w-full text-center uppercase text-xs font-semibold pb-8">{key.replace("_", " ")}</div>
           <div className="relative aspect-square">
-            {wheel.map((color) => (
-              <Image src={color} layout="fill" objectFit="contain" className={pairings[key][wheel.slice(Object.keys(images).indexOf(primary)).concat(wheel.slice(0, Object.keys(images).indexOf(primary))).indexOf(color)] ? "opacity-100" : "opacity-20"} />
+            {wheel.map((color, index) => (
+              <Image key={index} src={color} layout="fill" objectFit="contain" className={pairings[key][wheel.slice(Object.keys(images).indexOf(primary)).concat(wheel.slice(0, Object.keys(images).indexOf(primary))).indexOf(color)] ? "opacity-100" : "opacity-20"} />
             ))}
           </div>
         </div>
