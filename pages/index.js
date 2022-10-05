@@ -2,19 +2,19 @@ import Image from "next/image";
 import Red from "../public/wheel/Red.png"
 import Orange from "../public/wheel/Orange.png"
 import Yellow from "../public/wheel/Yellow.png"
+import Lime from "../public/wheel/Lime.png"
 import Green from "../public/wheel/Green.png"
 import Teal from "../public/wheel/Teal.png"
 import Cyan from "../public/wheel/Cyan.png"
 import LightBlue from "../public/wheel/LightBlue.png"
 import Blue from "../public/wheel/Blue.png"
-import Indigo from "../public/wheel/Indigo.png"
 import Purple from "../public/wheel/Purple.png"
 import Pink from "../public/wheel/Pink.png"
 import Rose from "../public/wheel/Rose.png"
 import { useState } from "react";
 
 export default function Home() {
-  const wheel = [Red, Orange, Yellow, Green, Teal, Cyan, LightBlue, Blue, Indigo, Purple, Pink, Rose]
+  const wheel = [Red, Orange, Yellow, Lime, Green, Teal, Cyan, LightBlue, Blue, Purple, Pink, Rose]
 
   const [ primary, setPrimary ] = useState("Red")
 
@@ -28,7 +28,7 @@ export default function Home() {
   }
 
   const images = {
-    "Red": Red, "Orange": Orange, "Yellow": Yellow, "Green": Green, "Teal": Teal, "Cyan": Cyan, "LightBlue": LightBlue, "Blue": Blue, "Indigo": Indigo, "Purple": Purple, "Pink": Pink, "Rose": Rose
+    "Red": Red, "Orange": Orange, "Yellow": Yellow, "Lime": Lime, "Green": Green, "Teal": Teal, "Cyan": Cyan, "LightBlue": LightBlue, "Blue": Blue, "Purple": Purple, "Pink": Pink, "Rose": Rose
   }
 
   
