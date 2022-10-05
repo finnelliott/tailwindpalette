@@ -114,7 +114,7 @@ export default function Home() {
       </div>
       <div className="max-w-xs pb-16 mx-auto">
         <label htmlFor="primary" className="block text-sm font-medium text-gray-200 text-center w-full mb-4">
-          Primary
+          Select the primary colour for your palette
         </label>
         <select
           id="primary"
